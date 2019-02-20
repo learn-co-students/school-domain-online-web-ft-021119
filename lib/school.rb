@@ -1,12 +1,21 @@
+require 'pry'
+
 class School
-  NEW = {}
-  attr_reader :name
+  attr_accessor :school, :roster
 
   def initialize(name)
-    @name = name
+    @school = name
+    @roster = {}
   end
 
   def add_student(name, grade)
-    @@roster[grade] << name
+    @roster[grade]? @roster[grade] << name : @roster[grade] = [name]
+  end
+
+  def grade(num)
+    @roster[num]
+  end
+  
+  def self.roster
   end
 end
