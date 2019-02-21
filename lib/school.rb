@@ -1,5 +1,15 @@
+Require 'pry'
 # # School class is the model in the domain object model context
 #   # binding.pry
+# 
+# #add_student
+#   is able to add a student
+#   is able to add multiple students to a class (grade)
+#   is able to add students to different grades
+# #grade
+#   is able to retreive students from a grade
+# #sort
+#   is able to sort the students
 class School
  attr_accessor :name, :roster #, :add_student
 
